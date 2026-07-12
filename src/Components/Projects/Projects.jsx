@@ -19,8 +19,8 @@ const Projects = () => {
         />
 
         <ProjectCard
-          title="IoT Smart Irrigation System"
-          main="Designed and developed an IoT-based smart irrigation system using Arduino, sensors, and automation to optimize water usage in agriculture."
+          title="Fire Fighting Robotics Car IoT "
+          main="Designed and developed an autonomous Fire Fighting Robotics Car using Arduino UNO, flame sensors, ultrasonic sensor, L298N motor driver, DC motors, and a water pump to detect and extinguish fire automatically."
         />
 
       </div>
