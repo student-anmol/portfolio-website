@@ -4,22 +4,39 @@ import TextChange from "../TextChange";
 
 const Home = () => {
   return (
-    <div className="text-white flex w-full justify-between items-start p-10 md:p-20">
-      <div className="md:w-2/4 md:pt-10 ">
-        <h1 className="text-xl md:text-6xl font-bold flex leading-normal tracking-tighter">
+    <div className="text-white flex flex-col md:flex-row w-full justify-between items-center px-4 py-10 md:px-20 md:py-20 max-w-6xl mx-auto">
+      
+      <div className="md:w-2/4 md:pt-10">
+        <h1 className="text-3xl md:text-6xl font-bold leading-normal tracking-tighter">
           <TextChange />
         </h1>
-        <p className="text-sm md:text-2xl tracking-tight ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-          doloremque?
+
+        <p className="mt-5 text-base md:text-xl tracking-tight">
+          <i>
+          Python Developer | Data Analyst | Data Science 
+          <br>
+          </br>
+          <br>
+          </br>
+
+           </i>
+I am a BCA graduate passionate about Python, Data Analytics, Data Science, and Machine Learning. I enjoy building real-world projects using Python, SQL, Power BI, Pandas, NumPy, and Data Visualization to solve practical problems and uncover meaningful insights.
+          
         </p>
-        <button className="mt-5 md:md-10 text-white py02 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]">
+
+        <button className="mt-8 text-white py-2 px-5 text-lg hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]">
           Contact Me
         </button>
       </div>
-      <div>
-        <img className="" src={avatarImg} alt="" />
+
+      <div className="mb-10 md:mb-0">
+        <img
+          className="w-72 md:w-96"
+          src={avatarImg}
+          alt="Anmol Rana"
+        />
       </div>
+
     </div>
   );
 };

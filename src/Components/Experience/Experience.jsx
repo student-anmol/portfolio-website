@@ -1,79 +1,119 @@
 import React from "react";
-import { FaCss3, FaFigma, FaHtml5, FaJs, FaReact } from "react-icons/fa";
-import { SiRedis } from "react-icons/si";
-import { FaGoogle } from "react-icons/fa";
-import { SiMongodb } from "react-icons/si";
-import { RiNetflixFill } from "react-icons/ri";
-import { FaAmazon } from "react-icons/fa";
+import {
+  FaPython,
+  FaDatabase,
+  FaChartLine,
+  FaBrain,
+  FaRobot,
+} from "react-icons/fa";
+
 const Experience = () => {
   return (
     <div id="Experience" className="p-10 md:p-24">
-      <h1 className="text-2xl md:text-4xl text-white font-bold">Experience</h1>
+      <h1 className="text-2xl md:text-4xl text-white font-bold">
+        Experience & Skills
+      </h1>
+
       <div className="flex flex-wrap items-center justify-around">
-        <div className="flex flex-wrap md:w-2/5 gap-8 md:p-12 py-10">
-          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <FaHtml5 color="#E34F26" size={50} />
-          </span>
-          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <FaCss3 color="#1572B6" size={50} />
-          </span>
-          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <FaReact color="#61DAFB" size={50} />
-          </span>
-          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <FaJs color="#F7DF1E" size={50} />
-          </span>
-          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <FaFigma color="#F24E1E" size={50} />
-          </span>
-          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <SiMongodb color="#47A248" size={50} />
-          </span>
-          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <SiRedis color="#FF4438" size={50} />
-          </span>
+
+        {/* Skills */}
+        <div className="flex flex-wrap md:w-2/5 gap-8 md:p-12 py-10 justify-center">
+
+          <div className="flex flex-col items-center">
+            <span className="p-4 bg-zinc-950 rounded-2xl">
+              <FaPython color="#3776AB" size={50} />
+            </span>
+            <p className="text-white mt-2">Python</p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <span className="p-4 bg-zinc-950 rounded-2xl">
+              <FaChartLine color="#22C55E" size={50} />
+            </span>
+            <p className="text-white mt-2">Data Analysis</p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <span className="p-4 bg-zinc-950 rounded-2xl">
+              <FaBrain color="#8B5CF6" size={50} />
+            </span>
+            <p className="text-white mt-2">Data Science</p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <span className="p-4 bg-zinc-950 rounded-2xl">
+              <FaRobot color="#F97316" size={50} />
+            </span>
+            <p className="text-white mt-2">Machine Learning</p>
+          </div>
+
         </div>
+
+        {/* Experience */}
         <div>
-          <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg p-4 items-center">
-            <FaGoogle color="#4285F4" size={50} />
+
+          <div className="flex gap-8 bg-slate-950 bg-opacity-45 mt-4 rounded-lg p-4 items-center">
+            <FaDatabase color="#3776AB" size={45} />
+
             <span className="text-white">
-              <h2 className="leading-tight">Software Engineer , Google</h2>
-              <p className="text-sm leading-tight font-thin">
-                Sept 2023 - Present
+              <h2 className="text-xl font-semibold">
+                Data Science with Python Intern
+              </h2>
+
+              <p className="text-sm font-thin">
+                IIT Kanpur • 2025
               </p>
+
               <ul className="text-sm p-2">
-                <li>- Work as software developer</li>
-                <li>- Senior SDE-developer</li>
+                <li>• Learned Python for Data Science.</li>
+                <li>• Performed data analysis using Pandas and NumPy.</li>
+                <li>• Built data visualization projects.</li>
               </ul>
             </span>
           </div>
-          <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg  p-4 items-center">
-            <RiNetflixFill color="#E50914" size={50} />
+
+          <div className="flex gap-8 bg-slate-950 bg-opacity-45 mt-4 rounded-lg p-4 items-center">
+            <FaRobot color="#F97316" size={45} />
+
             <span className="text-white">
-              <h2 className="leading-tight">Software Engineer, Google</h2>
-              <p className="text-sm leading-tight font-thin">
-                Sept 2023 - Present
+              <h2 className="text-xl font-semibold">
+                India Space Lab Intern
+              </h2>
+
+              <p className="text-sm font-thin">
+                June 2025 – July 2025
               </p>
+
               <ul className="text-sm p-2">
-                <li>- Work as software developer.</li>
-                <li>- Senior SDE-developer</li>
+                <li>• Developed an Arduino Fire Fighting Robot.</li>
+                <li>• Built an IoT Smart Irrigation System.</li>
+                <li>• Worked on embedded systems and automation.</li>
               </ul>
             </span>
           </div>
-          <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg  p-4 items-center">
-            <FaAmazon color="#FF9900" size={50} />
+
+          <div className="flex gap-8 bg-slate-950 bg-opacity-45 mt-4 rounded-lg p-4 items-center">
+            <FaPython color="#3776AB" size={45} />
+
             <span className="text-white">
-              <h2 className="leading-tight">Software Engineer, Google</h2>
-              <p className="text-sm leading-tight font-thin">
-                Sept 2023 - Present
+              <h2 className="text-xl font-semibold">
+                Python & Data Analytics Projects
+              </h2>
+
+              <p className="text-sm font-thin">
+                2025 – Present
               </p>
+
               <ul className="text-sm p-2">
-                <li>- Work as software developer.</li>
-                <li>- Senior SDE-developer</li>
+                <li>• Book Scraping using Python & BeautifulSoup.</li>
+                <li>• Chandrayaan-3 Data Analysis Dashboard.</li>
+                <li>• Power BI dashboards and SQL projects.</li>
               </ul>
             </span>
           </div>
+
         </div>
+
       </div>
     </div>
   );
